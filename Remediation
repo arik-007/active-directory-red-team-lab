@@ -1,0 +1,44 @@
+The purpose of this section is to document security improvements that can reduce the attack paths identified during the Active Directory assessment.
+
+## Active Directory Hardening
+
+### Privileged Accounts
+
+- Minimize the number of privileged accounts.
+- Avoid using Domain Administrator accounts for routine activities.
+- Use separate administrative and standard user accounts.
+
+### Password Security
+
+- Enforce strong password policies.
+- Use long, unique passwords for service accounts.
+- Regularly review and disable unused accounts.
+
+### Kerberos
+
+- Review service accounts and unnecessary SPNs.
+- Use managed service accounts where appropriate.
+- Monitor for suspicious Kerberos authentication activity.
+
+### Active Directory Permissions
+
+- Regularly review group memberships.
+- Audit excessive permissions.
+- Review dangerous ACL relationships.
+- Follow the principle of least privilege.
+
+### Lateral Movement
+
+- Restrict unnecessary administrative access between systems.
+- Limit remote administration services to authorized hosts.
+- Monitor suspicious authentication and remote execution activity.
+
+### BloodHound / Attack Path Review
+
+Organizations can periodically review Active Directory relationships to identify unnecessary privilege chains and reduce attack paths.
+
+## General Recommendation
+
+Active Directory security should be continuously reviewed rather than treated as a one-time configuration task.
+
+The goal is to reduce unnecessary privileges, eliminate dangerous relationships, protect privileged accounts, and make common attack paths significantly harder to exploit.
