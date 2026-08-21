@@ -1,0 +1,61 @@
+
+Overview
+
+This project uses an isolated virtual environment to simulate an Active Directory penetration testing scenario.
+
+The environment consists of a Kali Linux attacker machine and a Windows Active Directory environment.
+
+## Lab Components
+
+|System|Role|
+|---|---|
+|Kali Linux|Attacker / penetration testing|
+|Windows Server|Active Directory Domain Controller|
+|Windows Client|Domain-joined workstation|
+|VirtualBox|Virtualization|
+
+## Network
+
+The virtual machines communicate through an isolated virtual network.
+
+```
+                 Isolated Lab Network
+
+                    ┌───────────────┐
+                    │ Windows Server│
+                    │ Domain        │
+                    │ Controller    │
+                    └───────┬───────┘
+                            │
+                     ───────┼───────
+                            │
+                    ┌───────┴───────┐
+                    │ Windows Client │
+                    └───────────────┘
+
+                            │
+                    ┌───────┴───────┐
+                    │   Kali Linux   │
+                    │    Attacker    │
+                    └───────────────┘
+```
+
+## Tools
+
+The following tools were used during the assessment:
+
+- Nmap
+- PowerShell
+- SMB utilities
+- LDAP/Kerberos tools
+- SharpHound
+- BloodHound
+- PsExec
+
+## Purpose
+
+The purpose of this environment is to safely practice Active Directory enumeration, attack-path discovery, credential attacks, privilege escalation, and lateral movement without targeting real-world systems.
+
+## Status
+
+The lab is currently being expanded as additional Active Directory techniques are tested and documented.
