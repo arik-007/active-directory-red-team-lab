@@ -1,0 +1,70 @@
+This document describes the penetration-testing workflow followed during the Active Directory lab.
+
+The assessment began from the Kali Linux attacker machine and progressed through enumeration, Active Directory discovery, attack-path analysis, and privilege escalation.
+
+## 1. Initial Access
+
+The assessment began by obtaining access to a system within the lab environment.
+
+Evidence:
+
+  
+
+## 2. System Access
+
+After obtaining access, the environment was examined to understand the available privileges and potential paths for further movement.
+
+Evidence:
+
+  
+
+## 3. Domain Enumeration
+
+Active Directory and network information was enumerated to identify:
+
+- Domain information
+- Users
+- Groups
+- Computers
+- Services
+- Network resources
+- Potential attack paths
+
+Evidence:
+
+  
+
+## 4. Active Directory Collection
+
+SharpHound was used to collect Active Directory relationship data for further analysis.
+
+Evidence:
+
+  
+
+## 5. BloodHound Analysis
+
+The collected data was imported into BloodHound to identify relationships and potential attack paths between users, groups, computers, and privileges.
+
+Evidence:
+
+  
+
+## 6. Further Attacks
+
+Additional Active Directory techniques will be documented here as they are performed in the lab.
+
+Planned areas include:
+
+- Kerberos ticket attacks
+- Credential attacks
+- Privilege escalation
+- ACL abuse
+- Lateral movement
+- Additional Active Directory attack paths
+
+## Conclusion
+
+The lab demonstrates how an attacker can progress from initial access to Active Directory enumeration and attack-path discovery.
+
+Further techniques will be added as the lab develops.
